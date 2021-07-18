@@ -1,0 +1,32 @@
+<html>
+
+<head>
+<meta charset="UTF-8">
+
+    <title>Liste de choses à étudier en SIO2</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.css">
+</head>
+
+<body>
+<div id="root" class="container">
+<competence titre="SLAM3" contenu="Data - Bases de données - Modélisation UML"> </competence>
+<competence titre="SLAM4" contenu="Composants logiciels - Développement OO - Librairies"> </competence>
+<competence titre="SLAM5" contenu="Solutions applicatives"> </competence>
+<competence titre="PPE" contenu="PPE - Laravel - Vue - Android - Agile"> </competence>
+
+
+<modal v-if="montreDetail">
+
+    <macompetence titre="Data" contenu="La Data est un élement fondamental pour le Développement."> </macompetence>
+
+</modal>
+
+    <button @click="montreDetail=true"> Voir détails</button>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+<script src="050_MultCompVue.js"></script>
+</body>
+
+</html>
